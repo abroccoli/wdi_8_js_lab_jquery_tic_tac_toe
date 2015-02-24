@@ -14,13 +14,13 @@ var Circle = (function(){
   var changeColor = function(){
     if(click % 2 === 0 && $(this).get(0).set === false){
       $(this).css('background-color', '#f00');
-      $(this).get(0).player = 'Red';
-      $(this).get(0).set = true;
+      this.player = 'Red';
+      this.set = true;
       click++;
     }else if ($(this).get(0).set === false){
       $(this).css('background-color', '#000');
-      $(this).get(0).player = 'Black';
-      $(this).get(0).set = true;
+      this.player = 'Black';
+      this.set = true;
       click++;
     }
 
