@@ -12,7 +12,7 @@ $(document).ready(function(){
 var Circle = (function(){
   var click = 0;
   var changeColor = function(){
-    if(click % 2 === 0 && $(this).get(0).set === false){
+    if(click % 2 === 0 && this.set === false){
       $(this).css('background-color', '#f00');
       this.player = 'Red';
       this.set = true;
