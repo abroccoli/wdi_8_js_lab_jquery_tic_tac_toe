@@ -17,7 +17,7 @@ var Circle = (function(){
       this.player = 'Red';
       this.set = true;
       click++;
-    }else if ($(this).get(0).set === false){
+    }else if (this.set === false){
       $(this).css('background-color', '#000');
       this.player = 'Black';
       this.set = true;
